@@ -15,14 +15,10 @@ class WrongAnimal
 		WrongAnimal();
 		virtual ~WrongAnimal();
 	
-		WrongAnimal(std::string name);
 		WrongAnimal(const WrongAnimal& other);
 		WrongAnimal& operator=(const WrongAnimal& other);
 
-		void printWrongAnimal();
-
 		std::string getType() const;
-		void		setType(std::string type);
 
 		void	makeSound() const;
 

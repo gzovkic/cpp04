@@ -7,12 +7,6 @@ Animal::Animal()
 				<< RESET << std::endl;
 };
 
-Animal::Animal(std::string type)
-	: _type(type)
-{
-	std::cout 	<< BOLD << "Animal constructor called"
-				<< RESET << std::endl;
-};
 
 Animal::Animal(const Animal& other)
 	: _type(other._type)
@@ -36,20 +30,9 @@ Animal::~Animal()
 				<< RESET << std::endl;
 };
 
-void Animal::printAnimal()
-{
-	std::cout 	<< BOLD 	<< "Type: " << this->_type << "\n"
-				<< RESET << std::endl;
-}
-
 std::string Animal::getType() const
 {
 	return (this->_type);
-}
-
-void Animal::setType(std::string type)
-{
-	_type = type;
 }
 
 void Animal::makeSound() const 

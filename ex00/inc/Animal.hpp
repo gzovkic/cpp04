@@ -15,14 +15,10 @@ class Animal
 		Animal();
 		virtual ~Animal();
 	
-		Animal(std::string name);
 		Animal(const Animal& other);
 		Animal& operator=(const Animal& other);
 
-		void printAnimal();
-
 		std::string getType() const;
-		void		setType(std::string type);
 
 		virtual void	makeSound() const;
 
