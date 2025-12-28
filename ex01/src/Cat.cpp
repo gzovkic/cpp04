@@ -2,7 +2,6 @@
 
 Cat::Cat()
 {
-	this->_brain = new Brain;
 	this->_type = "Cat";
 	std::cout 	<< BLUE << "Cat default constructor called"
 				<< RESET << std::endl;
@@ -26,7 +25,6 @@ Cat& Cat::operator=(const Cat& other)
 
 Cat::~Cat()
 {
-	delete this->_brain;
 	std::cout 	<< BLUE << "Cat deconstructor called"
 				<< RESET << std::endl;
 };

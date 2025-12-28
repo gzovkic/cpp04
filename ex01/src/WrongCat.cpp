@@ -18,7 +18,6 @@ WrongCat& WrongCat::operator=(const WrongCat& other)
 	if(this == &other)
 		return(*this);
 	this->_type = other._type;
-	
 	std::cout << "WrongCat " << _type << " assigned." << std::endl;
 	return *this;
 }

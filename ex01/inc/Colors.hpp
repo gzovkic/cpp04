@@ -1,12 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <cmath>
-
 #define BLACK   "\033[30m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -52,6 +45,13 @@
 #define UNDERLINE  "\033[4m"
 #define REVERSED   "\033[7m"
 #define RESET      "\033[0m"
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <cmath>
 
 // #include <iostream>
 // #include <vector>
