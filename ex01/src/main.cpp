@@ -1,7 +1,7 @@
 #include "Colors.hpp"
-#include "Animal.hpp"
-#include "Cat.hpp"
-#include "Dog.hpp"
+#include "../inc/Animal.hpp"
+#include "../inc/Cat.hpp"
+#include "../inc/Dog.hpp"
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 #include "Brain.hpp"
@@ -32,7 +32,21 @@ int main()
 		ArrayOfAnimals[i]->makeSound();
 
 	//Copy testing
-	
+	Dog test;
+	test.getBrain().setIdea("test", 0);
+	{
+		std::cout << "[Entering Scope]" << std::endl;
+        Dog tmp = test; // Copy Constructor
+        std::cout << "Copy idea: " << tmp.getBrain().getIdea(0) << std::endl;
+        
+        tmp.getBrain().setIdea("tmp", 0);
+        std::cout << "Copy idea changed to: " << tmp.getBrain().getIdea(0) << std::endl;
+        std::cout << "[Exiting Scope]" << std::endl;
+    } 
+
+    std::cout	<< "Original idea after copy destruction: " << test.getBrain().getIdea(0) 
+				<< std::endl;
+
 	//Copy testing
 
 	// deleting ArrayOfAnimals
