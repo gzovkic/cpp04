@@ -3,9 +3,9 @@
 Cat::Cat()
 {
 	this->_type = "Cat";
-	this->_brain = new Brain();
 	std::cout 	<< BLUE << "Cat default constructor called"
 				<< RESET << std::endl;
+	this->_brain = new Brain();
 };
 
 

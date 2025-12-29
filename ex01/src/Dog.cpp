@@ -3,9 +3,9 @@
 Dog::Dog()
 {
 	this->_type = "Dog";
-	this->_brain = new Brain();
 	std::cout 	<< GREEN << "Dog default constructor called"
 				<< RESET << std::endl;
+	this->_brain = new Brain();
 };
 
 
@@ -23,7 +23,7 @@ Dog& Dog::operator=(const Dog& other)
 	delete this->_brain;
 	this->_brain = new Brain(*other._brain);
 	std::cout << "Dog " << _type << " assigned." << std::endl;
-	return *this;
+	return (*this);
 }
 
 Dog::~Dog()
