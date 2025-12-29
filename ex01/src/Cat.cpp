@@ -37,6 +37,11 @@ Cat::~Cat()
 
 void Cat::makeSound() const
 {
-	std::cout 	<< BOLD << "Cat makeSound"
+	std::cout 	<< BOLD  << BLUE << "Meow"
 				<< RESET << std::endl;
+}
+
+Brain& Cat::getBrain()
+{
+	return(*this->_brain);
 }

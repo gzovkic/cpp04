@@ -35,6 +35,11 @@ Dog::~Dog()
 
 void Dog::makeSound() const
 {
-	std::cout 	<< BOLD << "Dog makeSound"
+	std::cout 	<< BOLD << GREEN << "Woof"
 				<< RESET << std::endl;
+}
+
+Brain& Dog::getBrain()
+{
+	return(*this->_brain);
 }

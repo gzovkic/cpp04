@@ -13,7 +13,8 @@ class Cat : public Animal
 		Cat& operator=(const Cat& other);
 		
 		void makeSound() const override;
-
+		Brain& getBrain();
+		
 	private:
 		Brain *_brain;
 };

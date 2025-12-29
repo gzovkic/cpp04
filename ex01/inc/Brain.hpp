@@ -12,7 +12,7 @@ class Brain
         Brain& operator=(const Brain& other);
 
         std::string getIdea(int index);
-        
+        void        setIdea(std::string idea, int index);
     private:
         std::string _ideas[100];
 };

@@ -38,3 +38,10 @@ std::string Brain::getIdea(int index)
         return(this->_ideas[index]);
     return("");
 }
+
+void    Brain::setIdea(std::string idea, int index)
+{
+    if(index >= 0 && index <= 100)
+        return ;
+    this->_ideas[index] = idea;
+}

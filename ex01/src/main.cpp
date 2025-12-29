@@ -24,9 +24,16 @@ int main()
 					<< RESET << std::endl;
 		ArrayOfAnimals[i] = new Cat();
 	}
-	// CreatingArrayOfAnimals
+	// Creating ArrayOfAnimals
 
+	std::cout		<< YELLOW << "\n=== Useing the Makesound function ===" 
+					<< RESET << std::endl;
+	for(int i = 0; i < 100; i++)
+		ArrayOfAnimals[i]->makeSound();
 
+	//Copy testing
+	
+	//Copy testing
 
 	// deleting ArrayOfAnimals
 	for(int i = 0; i < 100 ; i++)
@@ -37,6 +44,5 @@ int main()
 	}
 	delete[] ArrayOfAnimals;
 	// deleting ArrayOfAnimals
-
 	return 0;
 }
