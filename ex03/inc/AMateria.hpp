@@ -1,5 +1,6 @@
-#include "Colors.hpp"
+#pragma once
 
+#include "Colors.hpp"
 class AMateria
 {
     protected:
