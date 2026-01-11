@@ -1,21 +1,21 @@
-#include "Cure.hpp"
-#include "ICharacter.hpp"
+#include "Spells/Cure.hpp"
+#include "Interface/ICharacter.hpp"
 
 Cure::Cure() : AMateria("cure")
 {
-    std::cout   << BRIGHT_BLUE << "Cure constructor called" 
+    std::cout   << BRIGHT_BLUE << "Cure constructor called"
                 << std::endl;
 }
 
 Cure::Cure(const Cure& other) : AMateria(other._type)
 {
-    std::cout   << BRIGHT_BLUE << "Cure copy constructor called" 
+    std::cout   << BRIGHT_BLUE << "Cure copy constructor called"
                 << std::endl;
 }
 
 Cure::~Cure()
 {
-    std::cout   << BRIGHT_BLUE << "Cure destructor called" 
+    std::cout   << BRIGHT_BLUE << "Cure destructor called"
                 << std::endl;
 }
 

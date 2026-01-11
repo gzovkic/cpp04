@@ -1,4 +1,4 @@
-NAME = animal
+NAME = rpg
 CPP = c++
 RM = rm -rf
 
@@ -17,7 +17,7 @@ vpath %.cpp $(SRC_DIRS)
 ###############                  SOURCE FILES                     ##############
 ################################################################################
 
-SRCS := main.cpp AMateria.cpp Ice.cpp
+SRCS := main.cpp AMateria.cpp Character.cpp Ice.cpp Cure.cpp
 OBJS := $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
 
 ################################################################################

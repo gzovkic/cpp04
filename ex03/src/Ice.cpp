@@ -1,21 +1,21 @@
-#include "Ice.hpp"
-#include "ICharacter.hpp"
+#include "Spells/Ice.hpp"
+#include "Interface/ICharacter.hpp"
 
 Ice::Ice() : AMateria("ice")
 {
-    std::cout   << BRIGHT_BLUE << "Ice constructor called" 
+    std::cout   << BRIGHT_BLUE << "Ice constructor called"
                 << std::endl;
 }
 
 Ice::Ice(const Ice& other) : AMateria(other._type)
 {
-    std::cout   << BRIGHT_BLUE << "Ice copy constructor called" 
+    std::cout   << BRIGHT_BLUE << "Ice copy constructor called"
                 << std::endl;
 }
 
 Ice::~Ice()
 {
-    std::cout   << BRIGHT_BLUE << "Ice destructor called" 
+    std::cout   << BRIGHT_BLUE << "Ice destructor called"
                 << std::endl;
 }
 

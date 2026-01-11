@@ -1,7 +1,7 @@
 #pragma once
 
 #include "AMateria.hpp"
-#include "ICharacter.hpp"
+#include "Interface/ICharacter.hpp"
 
 class Character : public ICharacter
 {
@@ -13,7 +13,10 @@ class Character : public ICharacter
         Character();
         Character(const Character& other);
         Character& operator=(const Character& other);
-        ~Character();
+        virtual ~Character();
 
-        
+        std::string const & getName() const override;
+        void equip(AMateria* m) override;
+        void    unequip(int idx) override;
+        void    use(int idx, ICharacter& target) override;
 };
