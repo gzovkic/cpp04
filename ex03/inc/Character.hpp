@@ -15,6 +15,7 @@ class Character : public ICharacter
         Character& operator=(const Character& other);
         virtual ~Character();
 
+        Character(std::string name);
         std::string const & getName() const override;
         void equip(AMateria* m) override;
         void    unequip(int idx) override;

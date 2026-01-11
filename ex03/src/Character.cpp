@@ -8,6 +8,15 @@ Character::Character() : _name("default")
         this->_inventory[i] = NULL;
 }
 
+Character::Character(std::string name)
+{
+    std::cout   << BRIGHT_BLUE << "Character constructor called"
+                << std::endl;
+	this->_name = name;
+    for(int i = 0; i < 4; i++)
+        this->_inventory[i] = NULL;
+}
+
 Character::Character(const Character& other)
 {
     std::cout   << BRIGHT_BLUE << "Character copy constructor called"
