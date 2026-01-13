@@ -2,16 +2,16 @@
 
 MateriaSource::MateriaSource()
 {
-    std::cout   << BRIGHT_BLUE << "MateriaSource constructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "MateriaSource constructor called"
+    //             << std::endl;
     for(int i = 0; i < 4; i++)
         this->_templates[i] = NULL;
 }
 
 MateriaSource::MateriaSource(const MateriaSource& other)
 {
-    std::cout   << BRIGHT_BLUE << "MateriaSource copy constructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "MateriaSource copy constructor called"
+    //             << std::endl;
     for(int i = 0; i < 4; i++)
         this->_templates[i] = NULL;
     for(int i = 0; i < 4; i++)
@@ -43,8 +43,8 @@ MateriaSource& MateriaSource::operator=(const MateriaSource& other)
 
 MateriaSource::~MateriaSource()
 {
-    std::cout   << BRIGHT_BLUE << "MateriaSource destructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "MateriaSource destructor called"
+    //             << std::endl;
     for(int i = 0; i < 4; i++)
         delete this->_templates[i];
 }

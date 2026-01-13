@@ -3,20 +3,20 @@
 
 Cure::Cure() : AMateria("cure")
 {
-    std::cout   << BRIGHT_BLUE << "Cure constructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "Cure constructor called"
+    //             << std::endl;
 }
 
 Cure::Cure(const Cure& other) : AMateria(other._type)
 {
-    std::cout   << BRIGHT_BLUE << "Cure copy constructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "Cure copy constructor called"
+    //             << std::endl;
 }
 
 Cure::~Cure()
 {
-    std::cout   << BRIGHT_BLUE << "Cure destructor called"
-                << std::endl;
+    // std::cout   << BRIGHT_BLUE << "Cure destructor called"
+    //             << std::endl;
 }
 
 Cure& Cure::operator=(const Cure& other)
@@ -34,6 +34,6 @@ AMateria* Cure::clone() const
 
 void Cure::use(ICharacter& target)
 {
-    std::cout   << "* heals " << target.getName() << "'s wounds *"
-                << std::endl;
+    std::cout   << BRIGHT_GREEN << "* heals " << target.getName() << "'s wounds *"
+                << RESET << std::endl;
 }
