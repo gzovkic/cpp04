@@ -23,8 +23,7 @@ int main()
 	tmp = src->createMateria("fire");
 	me->equip(tmp);
 	
-	ICharacter* bob
-	 = new Character("bob");
+	ICharacter* bob = new Character("bob");
 	me->use(0, *bob);
 	me->use(1, *bob);
 	me->use(2, *bob);

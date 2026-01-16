@@ -79,8 +79,8 @@ void Character::equip(AMateria* m)
 		if(this->_inventory[i] == NULL)
 		{
 			this->_inventory[i] = m;
-			std::cout	<< m->getType() << " has been equiped in inventory slot " << i
-						<< std::endl;
+			// std::cout	<< m->getType() << " has been equiped in inventory slot " << i
+			// 			<< std::endl;
 			return;
 		}
 	}

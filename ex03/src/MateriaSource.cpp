@@ -56,8 +56,8 @@ void MateriaSource::learnMateria(AMateria* materia)
 		if(this->_templates[i] == NULL)
 		{
 			this->_templates[i] = materia;
-			std::cout	<< materia->getType() << "  learn Materia on slot " << i
-						<< std::endl;
+			// std::cout	<< materia->getType() << "  learn Materia on slot " << i
+			// 			<< std::endl;
 			return;
 		}
 	}
